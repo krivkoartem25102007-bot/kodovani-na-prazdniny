@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responzivní layout</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header-label">Hlavička</div>
+
+      <div class="wrap header-inner">
+        <div class="header-spacer" aria-hidden="true"></div>
+
+        <div class="logo">Logo</div>
+
+        <div class="header-right">
+          <input class="nav-input" type="text" placeholder="Navigace" />
+          <button class="search-btn" aria-label="Hledat">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10 18a8 8 0 1 1 5.293-14.293A8 8 0 0 1 10 18zm0-2a6 6 0 1 0-4.243-1.757A5.96 5.96 0 0 0 10 16zm9.707 5.707-5.2-5.2 1.414-1.414 5.2 5.2-1.414 1.414z"/>
+            </svg>
+          </button>
+
+          <button class="burger" aria-label="Menu">
+            <span class="burger-lines" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="wrap content-wrap">
+        <div class="left-area">
+          <section class="row top">
+            <div class="box yellow">Box 1</div>
+            <div class="box yellow">Box 2</div>
+            <div class="box yellow selected">Box 3</div>
+            <div class="box yellow">Box 4</div>
+          </section>
+
+          <section class="row mid">
+            <div class="box orange">Box 1</div>
+            <div class="box orange">Box 2</div>
+            <div class="box orange">Box 3</div>
+          </section>
+
+          <section class="row bot">
+            <div class="box red has-dot">Box 1</div>
+            <div class="box red has-dot">Box 2</div>
+          </section>
+        </div>
+
+        <aside class="sidebar">Sidebar</aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-label">Patička</div>
+
+      <div class="wrap footer-inner">
+        <div class="footer-box">Box 1</div>
+        <div class="footer-box">Box 2</div>
+        <div class="footer-box">Box 3</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
